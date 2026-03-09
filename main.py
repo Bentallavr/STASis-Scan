@@ -342,14 +342,14 @@ with tab_intro:
 
     **Spread Through Air Spaces (STAS)** is a distinct pattern of tumor invasion first formally recognized by the World Health Organization in 2015 (Travis et al., 2015). It describes the presence of tumor cells within alveolar spaces beyond the main tumor margin, independent of vascular, lymphatic, or pleural invasion.
 
-    Think of it like **dandelion seeds dispersing beyond the main plant**—microscopic tumor clusters can float through air spaces, settle elsewhere in the lung, and eventually grow into new tumors.
+    Think of it like **dandelion seeds dispersing beyond the main plant** microscopic tumor clusters can float through air spaces, settle elsewhere in the lung, and eventually grow into new tumors.
 
     #### Why STAS Matters
 
     - **Prevalence:** Affects **16.4% to 26.7%** of early-stage lung cancer patients (Kadota et al., 2015; Huang et al., 2025)
     - **Recurrence Risk:** STAS-positive patients have **2-4x higher** risk of local recurrence
     - **Surgical Impact:** Patients with STAS have significantly worse outcomes after limited resection (segmentectomy/wedge) compared to lobectomy (Lee et al., 2025)
-    - **Current Challenge:** STAS cannot be reliably detected on preoperative imaging—it's only diagnosed after surgery when it's too late to change the approach
+    - **Current Challenge:** STAS cannot be reliably detected on preoperative imaging it's only diagnosed after surgery when it's too late to change the approach
 
     > *"STAS is one of the strongest predictors of local recurrence after lung cancer surgery."* — Kadota et al., *Journal of Thoracic Oncology*, 2015
 
@@ -440,7 +440,7 @@ with tab_intro:
     | **S100P** | Calcium-binding protein | STAS+ overexpression |
     | **TFF1** | Trefoil factor | STAS subtype marker |
 
-    These markers reflect **EMT (Epithelial-Mesenchymal Transition)** — the biological process behind STAS.
+    These markers reflect **EMT (Epithelial-Mesenchymal Transition)** —> the biological process behind STAS.
 
     ---
 
@@ -461,13 +461,13 @@ with tab_intro:
     - **ALK rearrangements** occur in 13.1% of STAS+ vs. 2.3% of STAS- (P<0.001)
     - **PTEN loss** enriches the tumor microenvironment for STAS (ESMO 2024)
 
-    These aren't just statistical associations—they reflect underlying biology that influences how tumors behave.
+    These aren't just statistical associations they reflect underlying biology that influences how tumors behave.
 
     #### Why This Approach?
 
     Most surgical decision tools rely only on **anatomical factors** (tumor size, location). But two tumors of the same size can behave completely differently based on their molecular profile. A 2cm tumor with TP53 mutation and E-cadherin loss has a **fundamentally different risk profile** than a 2cm tumor without these features.
 
-    By integrating molecular markers, we're not just predicting outcomes—we're **respecting tumor biology**. Our approach recognizes that:
+    By integrating molecular markers, we're not just predicting outcomes we're **respecting tumor biology**. Our approach recognizes that:
 
     | Traditional Approach | STASis-Scan Approach |
     |---------------------|----------------------|
