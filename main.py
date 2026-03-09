@@ -314,11 +314,12 @@ st.success("✅ Neural network initialized. Model loaded successfully.")
 # ============================================
 # TABS
 # ============================================
-tab_intro, tab_calc, tab_compare, tab_science = st.tabs([
+tab_intro, tab_calc, tab_compare, tab_science, tab_credits = st.tabs([
     "📖 Introduction", 
     "🔬 Risk Calculator", 
     "⚖️ Surgery Comparison", 
-    "📚 Scientific Background"
+    "📚 Scientific Background",
+    "©️ Credits & Legal"
 ])
 
 # ============================================
