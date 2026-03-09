@@ -384,7 +384,7 @@ with tab_intro:
 
     ### 🔬 The Science Behind Our Model
 
-    STASis-Scan does not invent new biology—it **translates existing research** into a practical clinical tool. Our model incorporates molecular features consistently associated with STAS in the peer-reviewed literature:
+    STASis-Scan does not invent new biology, it **translates existing research** into a practical clinical tool. Our model incorporates molecular features consistently associated with STAS in the peer-reviewed literature:
 
     #### Epithelial-Mesenchymal Transition (EMT) Markers
 
@@ -415,7 +415,7 @@ with tab_intro:
 
     ### 🎯 Our Approach: Synthetic Data, Real Relationships
 
-    Because no large public dataset contains all these variables together, we generated **synthetic data calibrated to published effect sizes**. Think of it as a **research-backed simulation**—every relationship in our model reflects actual findings from the literature.
+    Because no large public dataset contains all these variables together, we generated **synthetic data calibrated to published effect sizes**. Think of it as a **research-backed simulation** every relationship in our model reflects actual findings from the literature.
 
     | Feature Class | Literature Source | Model Implementation |
     |--------------|-------------------|---------------------|
@@ -448,11 +448,11 @@ with tab_intro:
 
     You might wonder: **why include molecular markers like TP53, KRAS, and E-cadherin in a surgical decision tool?**
 
-    The answer lies in the biology of STAS itself. Recent research has shown that STAS isn't just a random phenomenon—it's driven by specific molecular programs that make tumor cells more likely to detach, migrate, and spread through air spaces (Orlandi et al., 2025).
+    The answer lies in the biology of STAS itself. Recent research has shown that STAS isn't just a random phenomenon it's driven by specific molecular programs that make tumor cells more likely to detach, migrate, and spread through air spaces (Orlandi et al., 2025).
 
     #### The EMT Connection
 
-    **Epithelial-Mesenchymal Transition (EMT)** is the biological process where cells lose their "stickiness" (E-cadherin) and gain migratory properties (N-cadherin). Studies consistently show that **low E-cadherin and high N-cadherin are independent predictors of STAS** (Meng et al., 2024). By including these markers, our model captures the *mechanism* of spread—not just the fact that it happens.
+    **Epithelial-Mesenchymal Transition (EMT)** is the biological process where cells lose their "stickiness" (E-cadherin) and gain migratory properties (N-cadherin). Studies consistently show that **low E-cadherin and high N-cadherin are independent predictors of STAS** (Meng et al., 2024). By including these markers, our model captures the *mechanism* of spread not just the fact that it happens.
 
     #### Genetic Enrichment Patterns
 
@@ -485,7 +485,7 @@ with tab_intro:
 
     As one thoracic surgeon put it: *"I'd rather know how a tumor behaves than just how big it is."*
 
-    That's what molecular markers give us—a window into **tumor behavior**, not just tumor size.
+    That's what molecular markers give us a window into **tumor behavior**, not just tumor size.
 
     ---
 
@@ -494,7 +494,7 @@ with tab_intro:
     This tool empowers clinicians to:
 
     1. **Assess individualized risk** by entering patient-specific molecular and clinical features
-    2. **Compare surgical approaches** in real-time—see how the same patient's risk changes between lobectomy and segmentectomy
+    2. **Compare surgical approaches** in real-time see how the same patient's risk changes between lobectomy and segmentectomy
     3. **Make informed decisions** before entering the operating room
     4. **Counsel patients** with personalized recurrence estimates
 
@@ -520,6 +520,8 @@ with tab_intro:
     8. ESMO 2024. Genomic profiling of aggressive pathologic features in lung adenocarcinoma. *ELCC 2024*, Abstract 237P.
     9. Fan et al. (2024). S100P and TFF1 as novel STAS biomarkers. *Lung Cancer*, 189, 107654.
     10. Canadian Cancer Statistics Advisory Committee. (2024). Canadian Cancer Statistics 2024. *Canadian Cancer Society*.
+                
+    For more references and breakdown of our process check out our Scientific Backing tab!
     """)
 
     st.markdown('</div>', unsafe_allow_html=True)
