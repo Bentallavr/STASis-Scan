@@ -913,7 +913,8 @@ with tab_credits:
     ### 📬 Contact
 
     **Sara Habibi**  
-    📧 Email: `saraa.habibi@mail.utoronto.ca`  
+    📧 Email: `saraa.habibi@mail.utoronto.ca`
+    🤳🏻 Linkedin: www.linkedin.com/in/saraa-habibi1337  
     🏫 University of Toronto
 
     ---
