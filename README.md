@@ -1,5 +1,4 @@
-## 🎥 Demo Video
+🚀 Live App & Demo Video
 
-Click the thumbnail below to watch my STASis-Scan demo:
-
-[![STASis-Scan Demo](https://youtu.be/jxg1OlJkZyg)
+Try the tool: https://stasis-scan-ai-sh.streamlit.app/
+Watch the demo: https://youtu.be/jxg1OlJkZyg
