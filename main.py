@@ -885,13 +885,90 @@ with tab_science:
     st.markdown('</div>', unsafe_allow_html=True)
 
 # ============================================
+# TAB 5: ACKNOWLEDGMENTS & COPYRIGHT
+# ============================================
+with tab_credits:
+    st.markdown('<div class="glass-card">', unsafe_allow_html=True)
+    
+    st.markdown("""
+    ## ©️ STASis-Scan – Intellectual Property & Credits
+
+    ---
+
+    ### 👩‍💻 Created By
+
+    | Role | Name |
+    |------|------|
+    | **Lead Developer & ML Engineer** | Sara Habibi |
+    | **Clinical Research & Literature** | Sara Habibi |
+    | **UI/UX Design** | Sara Habibi |
+    | **Model Architecture** | Sara Habibi |
+
+    **Institution:** University of Toronto  
+    **Faculty:** Faculty of Arts & Science  
+    **Project:** Hackathon [Name] – March 2026
+
+    ---
+
+    ### 📬 Contact
+
+    For inquiries, collaborations, or permissions:
+
+    **Sara Habibi**  
+    📧 Email: `saraa.habibi@mail.utoronto.ca`  
+    🏫 University of Toronto – Computer Science
+
+    ---
+
+    ### ⚖️ Copyright & Usage Notice
+
+    **© 2026 Sara Habibi. All Rights Reserved.**
+
+    This work, including all code, design elements, model architecture, and content within the STASis-Scan application, is the intellectual property of Sara Habibi, affiliated with the **University of Toronto**.
+
+    #### 📜 Permitted Use
+    - ✅ Viewing and using the live application via the provided URL
+    - ✅ Citing this work in academic presentations with proper attribution to Sara Habibi
+    - ✅ Sharing the public link with attribution
+
+    #### 🚫 Prohibited Use
+    - ❌ Copying, reproducing, or redistributing the code without explicit written permission
+    - ❌ Claiming this work as your own
+    - ❌ Commercial use of any kind
+    - ❌ Removing or altering this copyright notice
+    - ❌ Using the model, synthetic data, or UI design for competitive purposes
+
+    > *"This tool represents hundreds of hours of research, coding, and literature review. Please respect the work that went into it."*
+
+    ---
+
+    ### 🛡️ Legal Protection
+
+    This project is protected under applicable copyright laws and is associated with the **University of Toronto**. Unauthorized reproduction or distribution of this code, in whole or in part, may result in legal action.
+
+    For permissions or inquiries, contact:  
+    **Sara Habibi** – `saraa.habibi@mail.utoronto.ca`
+
+    ---
+
+    ### 🏛️ University of Toronto Affiliation
+
+    This project was developed as part of [Hackathon Name] at the **University of Toronto**. The views and conclusions expressed herein are solely those of the author and do not necessarily represent the official views of the University of Toronto.
+
+    ---
+
+    ### 📚 How to Cite This Work
+
+    **APA 7th Edition:**
+                
+# ============================================
 # FOOTER WITH CREATOR SIGNATURE
 # ============================================
 st.divider()
 st.markdown(f"""
 <div class="creator-signature">
     <span>STASis-Scan</span> v2.0 | Medical Intelligence Platform<br>
-    Created by <span>Sara Habibi</span> | {datetime.now().year}<br>
+    Created by <span>Sara Habibi</span> | University of Toronto | {datetime.now().year}<br>
     <span style="font-size: 0.7rem; color: #8892b0;">Research Prototype - Not for Clinical Use YET! needs clinical validation</span>
 </div>
 """, unsafe_allow_html=True)
