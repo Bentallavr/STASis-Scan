@@ -905,61 +905,52 @@ with tab_credits:
     | **Model Architecture** | Sara Habibi |
 
     **Institution:** University of Toronto  
-    **Faculty:** Faculty of Arts & Science  
-    **Project:** Hackathon [Name] – March 2026
+    **Project:** Hackathon 2026
 
     ---
 
     ### 📬 Contact
 
-    For inquiries, collaborations, or permissions:
-
     **Sara Habibi**  
     📧 Email: `saraa.habibi@mail.utoronto.ca`  
-    🏫 University of Toronto – Computer Science
+    🏫 University of Toronto
 
     ---
 
-    ### ⚖️ Copyright & Usage Notice
+    ### ⚖️ Copyright Notice
 
     **© 2026 Sara Habibi. All Rights Reserved.**
 
-    This work, including all code, design elements, model architecture, and content within the STASis-Scan application, is the intellectual property of Sara Habibi, affiliated with the **University of Toronto**.
+    This work is the intellectual property of Sara Habibi, affiliated with the **University of Toronto**.
 
-    #### 📜 Permitted Use
-    - ✅ Viewing and using the live application via the provided URL
-    - ✅ Citing this work in academic presentations with proper attribution to Sara Habibi
-    - ✅ Sharing the public link with attribution
+    #### ✅ Permitted Use
+    - Viewing and using the live application
+    - Citing with proper attribution
+    - Sharing the public link
 
-    #### 🚫 Prohibited Use
-    - ❌ Copying, reproducing, or redistributing the code without explicit written permission
-    - ❌ Claiming this work as your own
-    - ❌ Commercial use of any kind
-    - ❌ Removing or altering this copyright notice
-    - ❌ Using the model, synthetic data, or UI design for competitive purposes
-
-    > *"This tool represents hundreds of hours of research, coding, and literature review. Please respect the work that went into it."*
+    #### ❌ Prohibited Use
+    - Copying or redistributing code
+    - Claiming as your own
+    - Commercial use
+    - Removing this notice
 
     ---
 
-    ### 🛡️ Legal Protection
+    ### 📚 How to Cite
 
-    This project is protected under applicable copyright laws and is associated with the **University of Toronto**. Unauthorized reproduction or distribution of this code, in whole or in part, may result in legal action.
-
-    For permissions or inquiries, contact:  
-    **Sara Habibi** – `saraa.habibi@mail.utoronto.ca`
+    **APA:** Habibi, S. (2026). STASis-Scan. University of Toronto. https://stasis-scan.streamlit.app
 
     ---
 
-    ### 🏛️ University of Toronto Affiliation
+    ### 🔗 Links
 
-    This project was developed as part of [Hackathon Name] at the **University of Toronto**. The views and conclusions expressed herein are solely those of the author and do not necessarily represent the official views of the University of Toronto.
+    - **Live App:** https://stasis-scan.streamlit.app
+    - **GitHub:** https://github.com/Bentallavr/STASis-Scan
 
     ---
-
-    ### 📚 How to Cite This Work
-
-    **APA 7th Edition:**
+    """)  # <-- MAKE SURE THIS CLOSING TRIPLE QUOTE IS HERE!
+    
+    st.markdown('</div>', unsafe_allow_html=True)
                 
 # ============================================
 # FOOTER WITH CREATOR SIGNATURE
