@@ -1,4 +1,3 @@
-
 # STASis-SCAN - FUTURISTIC MEDICAL GRADE DESIGN
 # Created by Sara Habibi
 import streamlit as st
@@ -351,14 +350,95 @@ model = load_model()
 st.success("✅ Neural network initialized. Model loaded successfully.")
 
 # ============================================
-# TABS
+# TABS - NEW ORDER WITH 4 TABS
 # ============================================
-tab1, tab2, tab3 = st.tabs(["🔬 Risk Calculator", "⚖️ Surgical Comparison", "📋 Medical Intelligence"])
+tab_intro, tab_calc, tab_compare, tab_science = st.tabs([
+    "📖 Introduction", 
+    "🔬 Risk Calculator", 
+    "⚖️ Surgery Comparison", 
+    "📚 Scientific Background"
+])
 
 # ============================================
-# TAB 1: RISK CALCULATOR
+# TAB 1: INTRODUCTION & STAS BASICS (NEW)
 # ============================================
-with tab1:
+with tab_intro:
+    st.markdown('<div class="glass-card">', unsafe_allow_html=True)
+    
+    st.markdown("""
+    ## 🫁 Welcome to STASis-Scan
+    
+    ### The Problem
+    
+    **Every year, thousands of lung cancer patients undergo surgery without knowing one critical factor: STAS status.**
+    
+    """)
+    
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        st.markdown("""
+        ### What is STAS?
+        
+        **Spread Through Air Spaces (STAS)** is a pattern of tumor invasion where cancer cells float through air spaces beyond the main tumor. First recognized by WHO in 2015.
+        
+        #### Key Facts:
+        - ✅ Affects **1 in 5** early-stage lung cancer patients
+        - ✅ **2-4x higher** recurrence risk
+        - ✅ **Lobectomy** beats segmentectomy for STAS+
+        - ❌ **Cannot** be detected before surgery
+        
+        > *"STAS is one of the strongest predictors of local recurrence."* — Kadota 2015
+        """)
+    
+    with col2:
+        st.markdown("""
+        ### 🇨🇦 Why Canada?
+        
+        Lung cancer is **Canada's leading cause of cancer death:**
+        
+        | Statistic | Number |
+        |-----------|--------|
+        | Annual cases | 30,000+ |
+        | Early-stage | ~18,000 |
+        | STAS+ patients | ~3,600 |
+        | Impacted by tool | **Thousands** |
+        
+        **Our goal:** Help Canadian surgeons make better decisions for these patients.
+        """)
+    
+    st.divider()
+    
+    st.markdown("""
+    ### 🔬 Biomarkers at a Glance
+    
+    | Marker | What It Is | STAS Link |
+    |--------|------------|-----------|
+    | **KRAS G12C** | Oncogene mutation | Aggressive biology |
+    | **TP53** | Tumor suppressor | **49.8% in STAS+** |
+    | **E-cadherin** | Cell 'glue' | Loss = spread |
+    | **N-cadherin** | Migration marker | Gain = mobility |
+    
+    These markers reflect **EMT (Epithelial-Mesenchymal Transition)** — the biological process behind STAS.
+    """)
+    
+    st.markdown("""
+    ### 🎯 Our Mission
+    
+    **STASis-Scan** translates cutting-edge research into a practical tool that:
+    1. **Predicts** your patient's 5-year recurrence risk
+    2. **Compares** lobectomy vs segmentectomy in real-time
+    3. **Empowers** informed surgical decisions
+    
+    > *"Making STAS part of every lung cancer discussion — before the incision."*
+    """)
+    
+    st.markdown('</div>', unsafe_allow_html=True)
+
+# ============================================
+# TAB 2: RISK CALCULATOR (Your original Tab 1)
+# ============================================
+with tab_calc:
     st.markdown('<div class="glass-card">', unsafe_allow_html=True)
     st.subheader("Patient Risk Assessment")
     
@@ -429,9 +509,9 @@ with tab1:
             st.warning("🚨 CLINICAL ALERT: STAS-positive + Segmentectomy combination shows 2.58x increased recurrence risk (Lee 2025)")
 
 # ============================================
-# TAB 2: SURGICAL COMPARISON
+# TAB 3: SURGICAL COMPARISON (Your original Tab 2)
 # ============================================
-with tab2:
+with tab_compare:
     st.markdown('<div class="glass-card">', unsafe_allow_html=True)
     st.subheader("Surgical Strategy Comparison")
     
@@ -492,9 +572,9 @@ with tab2:
             st.info("ℹ️ No significant difference between surgical approaches")
 
 # ============================================
-# TAB 3: MEDICAL INTELLIGENCE (25+ REFERENCES)
+# TAB 4: SCIENTIFIC BACKGROUND (Your original Tab 3)
 # ============================================
-with tab3:
+with tab_science:
     st.markdown('<div class="glass-card">', unsafe_allow_html=True)
     st.subheader("Medical Intelligence Report: Comprehensive Literature Review")
     
@@ -527,7 +607,7 @@ with tab3:
     - Comprehensive analysis of STAS as predictive and prognostic factor
     - Confirmed lobectomy as standard for STAS+ patients
     - Sublobar resection significantly increases recurrence risk in STAS+
-    - DOI: 10.3390/cancers17101696 [citation:1]
+    - DOI: 10.3390/cancers17101696
     
     **[5] Shiono S, Yanagawa N. (2016).** *Journal of Thoracic Oncology.*
     - STAS found frequently in invasive stage I lung adenocarcinoma cases
@@ -548,7 +628,7 @@ with tab3:
     - STAS+ with sublobar resection: **HR 2.58 for overall survival** (95% CI: 1.89-3.52)
     - STAS+ with sublobar resection: **HR 2.42 for recurrence-free survival** (95% CI: 1.76-3.33)
     - Confirmed interaction between STAS and resection extent
-    - DOI: 10.5090/jcs.2025s1.s9-5 [citation:3]
+    - DOI: 10.5090/jcs.2025s1.s9-5
     
     **[8] Eguchi T, et al. (2019).** *Journal of Thoracic Oncology.*
     - 421 patients with stage I lung adenocarcinoma (propensity score-matched analysis)
@@ -593,13 +673,13 @@ with tab3:
     - **TP53 mutation:** 49.8% in STAS+ vs 34.8% in STAS- (p = 0.002)
     - **ALK fusions:** 13.1% in STAS+ vs 2.3% in STAS- (p < 0.001)
     - **EGFR alteration:** 52.5% in STAS+ vs 69.7% in STAS- (p < 0.001)
-    - DOI: 10.3389/fgene.2023.1101443 [citation:2]
+    - DOI: 10.3389/fgene.2023.1101443
     
     **[15] Orlandi R, et al. (2025).** *Cancers.* Multidisciplinary review.
     - EMT markers: E-cadherin loss, N-cadherin gain in STAS+
     - Genetic associations: EGFR wild-type, ALK/ROS1 rearrangements
     - High Ki-67 expression correlates with STAS
-    - DOI: 10.3390/cancers17203374 [citation:6]
+    - DOI: 10.3390/cancers17203374
     
     **[16] Toyokawa G, et al. (2018).** *Anticancer Research.*
     - High frequency of ALK rearrangement in STAS+ lung adenocarcinases
@@ -627,7 +707,7 @@ with tab3:
     - High ΔCD4 and ΔCD8 values associated with worse RFP
     - High ΔFoxP3 significantly associated with worse RFP in STAS+ patients only
     - STAS + high immune cell values = lowest RFP among all groups
-    - DOI: 10.1016/j.heliyon.2024.e37412 [citation:5][citation:9]
+    - DOI: 10.1016/j.heliyon.2024.e37412
     
     ---
     
@@ -649,13 +729,13 @@ with tab3:
     - Internal validation AUC: 0.918
     - External validation AUC: 0.766
     - Superior to conventional radiomics models
-    - DOI: 10.21037/tlcr-24-646 [citation:4]
+    - DOI: 10.21037/tlcr-24-646
     
     **[24] Zhang Y, et al. (2025).** *International Journal of Radiation Medicine.*
     - XGBoost algorithm combining clinical and CT radiomics features
     - Training AUC: 0.902, Validation AUC: 0.896
     - SHAP analysis revealed lobulation and air cyst signs as key predictors
-    - DOI: 10.3760/cma.j.cn123456-20250524-00123 [citation:8]
+    - DOI: 10.3760/cma.j.cn123456-20250524-00123
     
     ---
     
@@ -666,7 +746,7 @@ with tab3:
     - STAS confirmed as independent risk factor (RFS: HR 2.61; OS: HR 2.15)
     - Adjuvant chemotherapy following SLR effectively reduced recurrence risk in STAS+
     - SLR + ACT vs lobectomy: RFS HR 0.44 vs 1.03
-    - DOI: 10.1245/s10434-025-17871-z [citation:7]
+    - DOI: 10.1245/s10434-025-17871-z
     
     **[26] Chen D, et al. (2020).** *Therapeutic Advances in Medical Oncology.*
     - Multi-institutional study on adjuvant chemotherapy in stage I lung adenocarcinoma with STAS
@@ -689,8 +769,6 @@ with tab3:
     | **EMT Markers** | E-cadherin, N-cadherin | [15, 17] |
     | **Surgical** | STAS, Procedure Type | [7, 8, 9, 10, 11, 12] |
     | **Immune Context** | (Model calibration) | [20] |
-    
-    ---a
     
     ### Validation Metrics
     
